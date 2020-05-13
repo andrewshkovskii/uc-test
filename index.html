@@ -1,11 +1,26 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>UC Test</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-  <input type="hidden" role="uploadcare-uploader" name="my_file" /> 
-  <script> window.UPLOADCARE_PUBLIC_KEY = "demopublickey"; </script> 
-  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js" charset="utf-8"></script>
-  </body>
+    <head>
+        <script type="text/javascript">
+            // Special staging project with apps settings
+            // pointed to domain localhost:5000
+            UPLOADCARE_PUBLIC_KEY = 'b016d85af7a12c96aafc';
+
+            UPLOADCARE_URL_BASE = 'https://upload.staging0.uploadcare.com';
+            UPLOADCARE_PUSHER_KEY = 'a2dfe15c549a403f58ee';
+
+            UPLOADCARE_TABS = 'all';
+            UPLOADCARE_SOCIAL_BASE = 'https://localhost:5000';
+
+            // UPLOADCARE_LOCALE = 'ru';
+        </script>
+        <script src="https://ucarecdn.com/3f4adb2c-73c3-4048-811f-39629b0c5276/uploadcarefullmin.js"></script>
+    </head>
+<body>
+
+    <p>Single: <input type="hidden" role="uploadcare-uploader"/></p>
+    <p>Multiple: <input type="hidden" role="uploadcare-uploader"
+                        data-multiple=""/></p>
+
+</body>
 </html>
